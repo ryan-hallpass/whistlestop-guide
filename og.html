@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root { --green:#003C2A; --green-deep:#04261c; --gold:#C8A64A; --cream:#F6EAD2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { background:#04261c; }
+  body { font-family:'Poppins',system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+  .og {
+    width:1200px; height:630px; position:relative; overflow:hidden;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
+    border: 1px solid rgba(200,166,74,0.0);
+  }
+  /* faint downtown photo under a deep-green wash — same treatment as the Drink slide */
+  .bg {
+    position:absolute; inset:0;
+    background-image: linear-gradient(rgba(0,60,42,0.86), rgba(4,38,28,0.93)), url('img/eat-hero.jpg');
+    background-size:cover; background-position:center;
+  }
+  .glow { position:absolute; inset:0; background: radial-gradient(ellipse at 50% -10%, rgba(200,166,74,0.20) 0%, transparent 60%); }
+  .dots { position:absolute; inset:0; background-image: radial-gradient(circle at 1px 1px, rgba(246,234,210,0.06) 1px, transparent 0); background-size:26px 26px; }
+  .frame { position:absolute; inset:26px; border:1px solid rgba(200,166,74,0.28); border-radius:10px; }
+  .content { position:relative; z-index:2; padding:0 90px; display:flex; flex-direction:column; align-items:center; }
+  .eyebrow { font-size:15px; font-weight:600; letter-spacing:0.32em; text-transform:uppercase; color:var(--gold); margin-bottom:18px; }
+  .logo { width:430px; height:auto; display:block; }
+  .rule { width:56px; height:2px; background:var(--gold); opacity:0.85; margin:30px 0; }
+  .tag { font-family:'Playfair Display', Georgia, serif; font-weight:400; color:var(--cream); font-size:41px; line-height:1.32; max-width:900px; }
+  .tag i { color:var(--gold); font-style:italic; }
+</style>
+</head>
+<body>
+  <div class="og">
+    <div class="bg"></div>
+    <div class="glow"></div>
+    <div class="dots"></div>
+    <div class="frame"></div>
+    <div class="content">
+      <div class="eyebrow">On Main · Ardmore, OK</div>
+      <img class="logo" src="logo-primary-gold.png" alt="The Whistlestop" />
+      <div class="rule"></div>
+      <div class="tag">Your guide to <i>eating, drinking and shopping</i><br>in downtown Ardmore.</div>
+    </div>
+  </div>
+</body>
+</html>
